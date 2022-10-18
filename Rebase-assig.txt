@@ -1,0 +1,10 @@
+Rebasing:
+Rebasing in Git is a process of joining a series of commits on top of another base commit.
+Usage:
+The main aim of rebasing is to maintain a progressively straight and cleaner project history. Rebasing gives rise to a perfectly linear project history which can follow the end commit of the feature all the way to the beginning of the project without any partitions.
+
+syntax:
+git rebase (branch to be merged)
+
+Merging v/s Rebasing:
+Both merge and rebase are used to merge branches but the difference lies in the commit history after you integrate one branch into another. In Git merging, commits from all the developers who made commits will be there in the git log. This is really good for beginners cause the head can be rolled back to commit from any of the developers. Whereas, in git rebase, commit from only a single developer will be stamped in the git log. Advanced developers prefer this cause it makes the commit history linear and clean.

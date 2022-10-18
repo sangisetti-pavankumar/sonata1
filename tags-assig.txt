@@ -1,0 +1,23 @@
+Tags:
+Tagging in GIT refers to creating specific points in the history of your repository.
+Two main purposes of tags are:
+
+	Make Release point on your code.
+	Create historic restore points.
+Inorder to create a tag:
+
+git tag (tag name)   //creates a tag in local repo
+git tag -d (tag name)  //to delete tag in local repo
+
+git tag  //to display created tags
+git show (tag name)  //to display tag details
+git tag -1 "starting letter of tag.*"  //to display all the tags stating with similar letter
+
+
+git push origin (tag name)    //to push tag to remote repo
+git push origin -d (tag name)  //to delete tag from remote repo
+
+
+git checkout -b (new branch name)(tag name)   //to create new branch from a tag and checkout
+
+git tag (new tag name)(commit id)    //to create a tag with past commit
